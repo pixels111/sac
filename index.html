@@ -13,8 +13,10 @@
     <div class="container">
         <!-- Header -->
         <header>
-            
-            <h1 id="app-title">Attendance Calculator</h1>
+            <logo>
+                <img src="saclogo.png" alt="App Logo" id="app-logo" class="saclogo">
+            </logo>
+            <h1 id="app-title">Student Attendance Calculator</h1>
             <button id="settings-btn" class="icon-btn">⚙️</button>
         </header>
 
@@ -43,8 +45,6 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
                 </select>
             </div>
 
@@ -106,11 +106,9 @@
                     <label>
                         <input type="checkbox" id="went-to-college"> Went to College
                     </label>
-                </div>
-                
+                </div>   
             </div>
         </main>
-
         <!-- Settings Page -->
         <div id="settings-page" class="page" style="display: none;">
             <button id="back-btn" class="icon-btn"><- Back</button>
@@ -139,7 +137,7 @@
                 </div>
                 <div class="setting-option">
                     <label>Percentage drop for 1 day absent:</label>
-                    <input type="number" id="absent-penalty" min="1" max="100" value="2">%
+                    <input type="number" id="absent-penalty" min="0" max="100">%
                 </div>
             </div>
 
@@ -189,7 +187,7 @@
                         <!-- Will be populated by JavaScript -->
                     </ul>
                 </div>
-            </div>
+            </div> 
 <div class="about">
     <h2>About the Attendance Tracker App</h2>
 
@@ -240,5 +238,10 @@
 <p>All data is saved automatically in your browser - no accounts or internet required after initial setup.</p>
 </div>
 <script src="script.js"></script>
+  <footer>
+    <p class="copyright">
+      © 2026 SAC — Built by <span><a href="https://pixels111.github.io/bcahub" class="splink">BCAHub</a></span> | All Rights Reserved.
+    </p>
+  </footer>
 </body>
 </html>

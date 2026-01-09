@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
             4: { workingDays: [], holidays: [], attended: [], holidayNames: {}, startDate: null, endDate: null },
             5: { workingDays: [], holidays: [], attended: [], holidayNames: {}, startDate: null, endDate: null },
             6: { workingDays: [], holidays: [], attended: [], holidayNames: {}, startDate: null, endDate: null },
-            7: { workingDays: [], holidays: [], attended: [], holidayNames: {}, startDate: null, endDate: null },
-            8: { workingDays: [], holidays: [], attended: [], holidayNames: {}, startDate: null, endDate: null }
         },
         settings: {
             darkMode: 'light',
@@ -31,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
              { name: "Christmas Day", date: "12-25" }
                 ],
         dynamicHolidays: [
-             { name: "Vinayaka Chavithi", date: "2025-02-04" },
+            //yyyy-mm-dd 2025
+             { name: "Vinayaka Chavithi", date: "2025-02-04" }, 
              { name: "Radha Saptami", date: "2025-02-04" },
              { name: "Maha Shivaratri", date: "2025-02-26" },
              { name: "Holi", date: "2025-03-14" },
@@ -43,10 +42,29 @@ document.addEventListener('DOMContentLoaded', function() {
              { name: "Teachers' Day", date: "2025-09-05" },
              { name: "Milad-un-Nabi", date: "2025-09-05" },
              { name: "Vijayadashami", date: "2025-10-02" },
-             { name: "Diwali", date: "2025-10-20" }
+             { name: "Diwali", date: "2025-10-20" },
+              //yyyy-mm-dd 2026
+             { name: "Radha Saptami", date: "2026-01-25" },
+             { name: "Maha Shivaratri", date: "2026-02-15" },
+             { name: "Holi", date: "2026-03-03" },
+             { name: "Ugadi", date: "2026-03-19" },
+             { name: "Ramzan", date: "2026-03-21" },
+             { name: "Sri Rama Navami", date: "2026-03-27" },
+             { name: "Good Friday", date: "2026-04-03" },
+             { name: "Bakrid (Eid al-Adha)", date: "2026-05-28" },
+             { name: "Muharram", date: "2026-06-26" },
+             { name: "Varalakshmi Vratam", date: "2026-08-21" },
+             { name: "Milad-un-Nabi", date: "2026-08-26" },
+             { name: "Krishna Janmashtami", date: "2026-09-04" },
+             { name: "Vinayaka Chavithi", date: "2026-09-14" },
+             { name: "Teachers' Day", date: "2026-09-05" },
+             { name: "Vijayadashami", date: "2026-10-20" },
+             { name: "Diwali", date: "2026-11-08" },
         ],
         bulkHolidays: [
-             { name: "Sankranti", startDate: "2025-01-13", endDate: "2025-01-15" }
+             { name: "Sankranti", startDate: "2025-01-13", endDate: "2025-01-15" },
+             { name: "Sankranti", startDate: "2026-01-14", endDate: "2026-01-16" }
+
         ]
     };
     
@@ -268,7 +286,7 @@ if ('lastHolidayEnd' in attendanceData && attendanceData.lastHolidayEnd !== null
 }
             // Set UI elements from loaded data
             darkModeSelect.value = attendanceData.settings.darkMode || 'system';
-            absentPenaltyInput.value = attendanceData.settings.absentPenalty || 2;
+            absentPenaltyInput.value = attendanceData.settings.absentPenalty || 0;
             applyDarkMode();
         }
     }
