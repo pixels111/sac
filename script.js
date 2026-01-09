@@ -29,20 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
              { name: "Christmas Day", date: "12-25" }
                 ],
         dynamicHolidays: [
-            //yyyy-mm-dd 2025
-             { name: "Vinayaka Chavithi", date: "2025-02-04" }, 
-             { name: "Radha Saptami", date: "2025-02-04" },
-             { name: "Maha Shivaratri", date: "2025-02-26" },
-             { name: "Holi", date: "2025-03-14" },
-             { name: "Sri Rama Navami", date: "2025-04-06" },
-             { name: "Good Friday", date: "2025-04-18" },
-             { name: "Bakrid (Eid al-Adha)", date: "2025-06-07" },
-             { name: "Varalakshmi Vratam", date: "2025-08-08" },
-             { name: "Krishna Janmashtami", date: "2025-08-16" },
-             { name: "Teachers' Day", date: "2025-09-05" },
-             { name: "Milad-un-Nabi", date: "2025-09-05" },
-             { name: "Vijayadashami", date: "2025-10-02" },
-             { name: "Diwali", date: "2025-10-20" },
               //yyyy-mm-dd 2026
              { name: "Radha Saptami", date: "2026-01-25" },
              { name: "Maha Shivaratri", date: "2026-02-15" },
@@ -62,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
              { name: "Diwali", date: "2026-11-08" },
         ],
         bulkHolidays: [
-             { name: "Sankranti", startDate: "2025-01-13", endDate: "2025-01-15" },
              { name: "Sankranti", startDate: "2026-01-14", endDate: "2026-01-16" }
 
         ]

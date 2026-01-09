@@ -50,6 +50,8 @@ body {
 header {
     display: flex;
     align-items: center;
+    gap: 0;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -59,10 +61,45 @@ header {
     font-size: 24px;
     cursor: pointer;
     color: var(--text-color);
+    margin-left: auto;
+}
+.icon-btn-back{
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    margin-bottom: 10px;
 }
 #app-title {
     font-size: 24px;
     font-weight: bold;
+    margin-left: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex: 1 1 auto;
+    padding: 0 8px;
+    scrollbar-width: auto;
+    scrollbar-color: var(--primary-color) transparent;
+}
+@media (min-width: 800px) {
+    #app-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+/* WebKit scrollbar for horizontal scrolling */
+#app-title::-webkit-scrollbar {
+    height: 8px;
+}
+#app-title::-webkit-scrollbar-track {
+    background: transparent;
+}
+#app-title::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
 }
 .saclogo{
   width:60px;
