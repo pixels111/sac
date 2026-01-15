@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
              { name: "Diwali", date: "2026-11-08" },
         ],
         bulkHolidays: [
-             { name: "Sankranti", startDate: "2026-01-14", endDate: "2026-01-16" }
+             { name: "Sankranti", startDate: "2026-01-11", endDate: "2026-01-17" }
 
         ]
     };
